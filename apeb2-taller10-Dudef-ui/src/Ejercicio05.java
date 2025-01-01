@@ -35,9 +35,6 @@ public class Ejercicio05 {
             precio_cant[i][0] = teclado.nextDouble();
             System.out.print("Dime la cantidad del producto: ");
             precio_cant[i][1] = teclado.nextDouble();
-            //System.out.println(productos[i]);
-            //System.out.println(precio_cant[i][0]);
-            //System.out.println(precio_cant[i][1]);
         }
         teclado.nextLine();
         //Empieza el sistema de facturacion
