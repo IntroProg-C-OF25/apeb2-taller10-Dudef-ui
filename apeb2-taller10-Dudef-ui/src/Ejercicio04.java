@@ -21,9 +21,6 @@ public class Ejercicio04 {
         boolean continuar = true;
         String actualizar, eliminar;
         String[][] productos = new String[20][3];
-        //System.out.print("\n 1. Agregar producto\n 2. Actualizar productos existentes\n 3. Buscar producto \n 4. Eliminar productos\n");
-        //System.out.print("¿Qué proceso quieres realizar?\n");
-        //proceso = teclado.nextInt();
         //Condicional del proceso
         System.out.print("BIENVENIDO");
         while (continuar == true) {
@@ -31,7 +28,7 @@ public class Ejercicio04 {
             System.out.print(" 1. Agregar producto\n 2. Actualizar productos existentes\n 3. Buscar producto \n 4. Eliminar productos\n(Presiona 0 si quieres acabar con el proceso)\n");
             proceso = teclado.nextInt();
             teclado.nextLine();
-            if(proceso == 0){
+            if (proceso == 0) {
                 continuar = false;
             }
             //En caso de querer agregar los productos (use el condicional if y no switch por comodidad)
@@ -92,7 +89,7 @@ public class Ejercicio04 {
                 teclado.nextLine();
                 for (int i = 0; i < extension; i++) {
                     if (productos[i][0].equalsIgnoreCase(eliminar)) {
-                        System.out.print("Se va a proceder con la eliminacion del producto: " + productos[i][0]+"\n");
+                        System.out.print("Se va a proceder con la eliminacion del producto: " + productos[i][0] + "\n");
                         //Elimina automaticamente todas las columnas 
                         for (int j = 0; j < productos[0].length; j++) {
                             productos[i][j] = "";
